@@ -24,4 +24,4 @@ All dataset contains a RGB, a Depth and a PLY.
 
 [data_6.79m_5], https://pan.baidu.com/s/1x5y7_hP8bBT-B7NWggPbjw, code 1111 
 
-
+Data should use https://github.com/HTLife/png_to_klg to converte to the klg format for our code or ElasticFusion.
