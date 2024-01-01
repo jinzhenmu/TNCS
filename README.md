@@ -25,3 +25,22 @@ All dataset contains a RGB, a Depth and a PLY.
 [data_6.79m_5], https://pan.baidu.com/s/1x5y7_hP8bBT-B7NWggPbjw, code 1111 
 
 Data should use https://github.com/HTLife/png_to_klg to converte to the klg format for our code or ElasticFusion.
+# 1. What do I need to build TNCS? #
+```bash
+sudo apt install -y cmake-qt-gui git build-essential libusb-1.0-0-dev libudev-dev openjdk-11-jdk freeglut3-dev libglew-dev libsuitesparse-dev zlib1g-dev libjpeg-dev
+```
+```bash
+cd TNCS/
+git submodule update --init
+cd third-party/OpenNI2/
+make -j8
+cd ../Pangolin/
+mkdir build
+cd build
+cmake ..
+make -j8
+cd ../../..
+mkdir build
+cd build/
+cmake ..
+```
