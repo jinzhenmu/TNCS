@@ -44,3 +44,4 @@ mkdir build
 cd build/
 cmake ..
 ```
+The proposed framework is extended from ElasticFusion. 
